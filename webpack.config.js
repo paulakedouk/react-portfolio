@@ -11,7 +11,8 @@ module.exports = {
         rules: [
             { test: /\.(js)$/, use: 'babel-loader' },
             { test: /\.svg$/, use: 'svg-inline-loader' },
-            { test: /\.css$/, use: ['style-loader', 'css-loader'] }
+            { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+            { test: /\.jpg$/, use: 'file-loader' }
         ]
     },
     plugins: [

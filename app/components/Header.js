@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import './index.css'
-import ArrowImage from './img/arrow.svg';
+import ArrowImage from '../img/arrow.svg';
 import SVG from 'react-inlinesvg';
 import "animate.css/animate.min.css";
 

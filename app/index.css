@@ -1,3 +1,10 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
    font-family: 'Helvetica Neue', 'Helvetica Neue Light', sans-serif;
    color: gray;
@@ -9,6 +16,35 @@ body {
    overflow-x:hidden;
    font-size: 14px;
 }
+
+/* Patterns */
+
+h2 {
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #ED527F;
+	font-weight: 500;
+}
+
+h6 {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+a {
+	color: #ED527F;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 
 /* Header */
 
@@ -72,4 +108,71 @@ body {
     right: 0;
     bottom: 30px;
     margin:0 auto;
+}
+
+/* Session */
+
+.topic {
+	padding: 70px;
+	margin: 0;
+}
+
+.title h3 {
+	font-weight: 100;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+.bottom-line {
+	background: #ED527F;
+	margin-top: 5px;
+	height: 2px;
+	width: 60px;
+}
+
+/* About me */
+
+.about-area {
+	position: relative;
+	width: 100%;
+}
+
+.about-img {
+	background-image: url(./img/me.jpg);
+	background-size: cover;
+	margin: 0 70px 100px;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	float: left;
+}
+
+.button {
+	background-color: #ED527F;
+	text-align: center;
+	font-size: 14px;
+	margin: 53px 0 60px 0;
+	color: white;
+	float: left;
+	padding: 10px;
+	border-radius: 20px;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+.button-pink {
+	background-color: #ED527F;
+	width: 200px;
+}
+
+.button-gray {
+	background-color: gray;
+	width: 150px;
+	margin-left: 30px;
+}
+
+.about-area p {
+    margin-right: 50px;
 }
