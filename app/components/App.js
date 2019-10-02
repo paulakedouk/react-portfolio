@@ -1,22 +1,23 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import Header from './Header'
-import AboutMe from './AboutMe';
+import Content from './Content';
+import * as Rellax from 'rellax/rellax'
 
 import SVG from 'react-inlinesvg';
-import "animate.css/animate.min.css";
+import "../animate.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-export default class App extends Component {
-    render() {
-        return (
-            <div>
-                <Header />
-                <ScrollAnimation animateIn="fadeIn">
-                    <AboutMe />
-                </ScrollAnimation>
-
-            </div>
-        )
-    }
+const App = () => {
+    useEffect(() => {
+        window.rellax = new Rellax('.rellax')
+    }, [])
+    return (
+        <>
+            <Header />
+            <Content />
+        </>
+    )
 }
+
+export default App;
 

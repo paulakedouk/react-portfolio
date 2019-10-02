@@ -17,10 +17,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animate.css": "^3.7.2",
     "react": "^16.9.0",
     "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-rellax": "^1.0.3",
+    "react-scroll-effects": "^1.0.13",
+    "rellax": "^1.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
